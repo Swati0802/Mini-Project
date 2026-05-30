@@ -1,0 +1,130 @@
+<html>
+<head>
+        <style>
+             h2{
+                text-align: center;
+                background-color: rgb(163, 202, 214);
+                color: rgb(5, 5, 63);
+            }
+            
+            .butt1{
+                margin-left: 110px;
+                background-color:black;
+                border-radius: 10px;
+                border-color:antiquewhite;
+                color: white;
+            }
+            .butt2{
+                margin-left: 110px;
+                background-color:black;
+                border-radius: 10px;
+                border-color:antiquewhite;
+                color: white;
+            }          
+        </style>
+</head>
+<body>
+<h3 align="middle" style="background-color:rgb(235, 216, 194);"> 💖 Reserve Your Luxurious Stay Today 💖</h3><hr>
+
+        <h2><b> Booking Form </b></h2>
+
+        <script>
+            function validation(){
+                let name = document.getElementById("name").value;
+                let Email = document.getElementById("Email").value;
+                let phone = document.getElementById("phone").value;
+                let guest = document.getElementById("guest").value;
+
+                if(name ==""){
+                    alert("Please enter Full Name");
+                    return false;
+                }
+
+                if (Email==""){
+                    alert("Please enter Email ID");
+                    return false;
+                }
+
+                if (!Email.includes("@") || !Email.includes(".")){
+                    alert("Please enter valid Email");
+                    return false;
+                }
+
+                if(phone ==""|| phone.length !=10){
+                    alert("Please enter Phone Number");
+                    return false;
+                }
+
+                if(guest==""){
+                    alert("Please enter Number of Guest");
+                    return false;
+                }
+                alert("Form Submitted Successfully!");
+                return true;
+            }
+        </script>
+
+        <form onsubmit="return validation()">
+                <lable for="name">Full Name:</lable>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <lable for="Email">Email ID:</lable>
+                <input type="email" id="Email" name="Email" placeholder="Enter your E-mail" required><br><br>
+
+                <lable for="Gender">Gender:</lable>
+
+                <lable for="Gender">Male</lable>
+                <input type="radio" id="Male" name="Gender">
+
+                <lable for="Gender">Female</lable>
+                <input type="radio" id="Female" name="Gender">
+
+                <lable for="Gender">Other</lable>
+                <input type="radio" id="Other" name="Gender"><br><br>
+
+                <label for="phone">Phone no.:</label>
+                <input type="tel" id="phone" placeholder="Enter your mo. no."><br><br>
+
+                <label for="address">Address:</label>
+                <textarea name="address" rows="7" cols="30" placeholder="Enter your Address" required></textarea><br><br>
+
+                <lable for="Date">Check-in Date:</lable>
+                <input type="Date" id="Date" name="Date"><br><br>
+
+                <lable for="Date">Check-out Date:</lable>
+                <input type="Date" id="Date" name="Date"><br><br>
+
+                <lable for="people">Guest:</lable>
+
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>More Than 2</option>
+                </select><br><br>
+                
+                <label for="people">Number of Guests:</label>
+                <input type="text" id="guest" placeholder="Enter No. of People"><br><br>
+
+                <lable for="room">Room Type:</lable>
+
+                <lable for="room">Deluxe Room</lable>
+                <input type="radio" id="Male" >
+
+                <lable for="room">Luxury Suite</lable>
+                <input type="radio" id="Female" >
+
+                <lable for="room">Family Suite</lable>
+                <input type="radio" id="Other" >
+                
+                <lable for="room">Standard Room</lable>
+                <input type="radio" id="Other" ><br><br>
+
+                <label for="request">Special Request:</label>
+                <textarea name="address" rows="3" cols="40" placeholder="Enter your extra requirement" required></textarea><br><br><br>
+
+                <input type="submit" class="butt1" value="SUBMIT">
+                <input type="RESET" class="butt2" value="CLEAR">
+        </form>
+
+</body>
+</html>
