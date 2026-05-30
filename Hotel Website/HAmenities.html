@@ -1,0 +1,116 @@
+<html>
+    <head>
+    <style>
+    .amenities {
+        text-align: center;
+        padding: 60px 20px;
+        background: mistyrose;
+    }
+
+    .amenities h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: rgb(5, 5, 81);
+    }
+
+    .amenities h2:hover{
+        color: rgb(86, 4, 4);
+        font-style: oblique;
+    }
+
+    .tagline {
+        color: #777;
+        margin-bottom: 40px;
+    }
+    .tagline:hover{
+        color: black;
+    }
+
+    .amenities-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 100px;
+    }
+
+    .amenity {
+        background: aliceblue;
+        padding: 25px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+
+    .amenity h3{
+        color: rgb(5, 5, 75);
+    }
+
+    .amenity:hover {
+        transform: translateY(8px);
+    }
+
+    .icon {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    </style>
+    </head>
+    <body>
+    <section class="amenities">
+        <h2>Our Premium Amenities</h2>
+        <p class="tagline">Experience comfort, luxury, and convenience at Serene Palace</p>
+
+    <div class="amenities-container">
+
+        <div class="amenity">
+            <div class="icon">📶</div>
+            <h3>Free Wi-Fi</h3>
+            <p>High-speed internet available in all rooms.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🛎️</div>
+            <h3>24/7 Room Service</h3>
+            <p>Enjoy food and services anytime.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🍽️</div>
+            <h3>Restaurant</h3>
+            <p>Delicious meals prepared by expert chefs.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🚙</div>
+            <h3>Free Parking</h3>
+            <p>Safe and spacious parking for guests.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🏊</div>
+            <h3>Swimming Pool</h3>
+            <p>Relax and enjoy our luxury pool.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">📺</div>
+            <h3>Smart TV</h3>
+            <p>Entertainment with multiple channels.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🧥</div>
+            <h3>Laundry Service</h3>
+            <p>Quick and convenient laundry facility.</p>
+        </div>
+
+        <div class="amenity">
+            <div class="icon">🏢</div>
+            <h3>24/7 Front Desk</h3>
+            <p>Our staff is always available to help.</p>
+        </div>
+
+    </div>
+    </section>
+    </body>
+</html>
