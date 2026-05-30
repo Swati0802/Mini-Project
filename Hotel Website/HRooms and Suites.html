@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+
+            .rooms-section{
+                padding:60px 10%;
+            }
+
+            .rooms-section h2{
+                color: rgb(4, 4, 63);
+                text-align:center;
+                font-size:36px;
+                margin-bottom:10px;
+            }
+
+            .rooms-section h2:hover{
+                color: black;
+                font-style: oblique;
+            }
+            .room-tagline{
+                text-align:center;
+                color:gray;
+                margin-bottom:50px;
+            }
+            .room-tagline:hover{
+                color: darkblue;
+                font-size: larger;
+                font-style: italic;
+            }
+            .room{
+                display:flex;
+                align-items:center;
+                gap: 40px;
+                margin-bottom: 50px;
+            }
+
+            .room-details{
+                width:50%;
+            }
+
+            .room-details h3{
+                font-size:26px;
+                margin-bottom:10px;
+                color: rgb(4, 4, 73);
+            }
+            .room-details h3:hover{
+                color: black;
+                font-style: oblique;
+            }
+            .room-details p{
+                color: gray;
+            }
+
+            .room-details ul{
+                list-style:none;
+                padding:0;
+                margin:10px 0;
+            }
+
+            .room-details ul li{
+                padding:4px 0;
+            }
+
+            .room-info{
+                margin:10px 0;
+                display:flex;
+                gap:20px;
+            }
+
+            .price{ 
+                font-size:20px;
+                font-weight:bold;
+                margin:10px 0;
+            }
+
+            .book-btn{
+
+                padding:10px 20px;
+                border:none;
+                background:#c59d5f;
+                color:white;
+                cursor:pointer;
+                border-radius:5px;
+            }
+
+            .book-btn:hover{
+                background:#a07d45;
+            }
+
+            .reverse{
+                flex-direction:row-reverse;
+            }
+            .photo #ph1{
+                background-image: url('https://grammhotel.com/wp-content/uploads/2024/10/Grand-Deluxe-King-1024x683.jpg');
+                width: 1000px;
+                height: 680px;
+            }
+            .photo #ph2{
+                margin-top: 20px;
+                background-image: url('https://koretraveler.com/wp-content/uploads/2023/03/15.webp971903f4b526e2a68cfe2f133111d1d0.webp');
+                width: 1000px;
+                height: 700px;
+            }
+            .photo #ph3{
+                margin-top: 20px;
+                background-image: url('https://www.visitnh.gov/getmedia/866f6ddb-a214-447e-8a1a-ae478dcd0644/nh092nqqt1.jpg?width=1000&mediaprotectionhash=66b3a59a2257058423ecc993cb555ed93d78a7fac59c5b3afcb6a4656e7e93a3');
+                width: 1000px;
+                height: 670px;
+            }
+            .photo #ph4{
+                margin-top: 20px;
+                background-image: url('https://pix10.agoda.net/hotelImages/186705/-1/bd398ea542d058bae92b888c1c8cc688.jpg?ca=13&ce=1&s=1024x768');
+                width: 1000px;
+                height: 670px;
+            }
+            h2{
+                text-align: center;
+                font-size: 30px;
+            }
+            h2:hover{
+                font-style: italic;
+                color: darkblue;
+            }
+            .photo p{
+                font-size: 25px;
+            }
+            .photo p:hover{
+                color: darkblue;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="rooms-section">
+
+            <h2>Our Rooms & Suites</h2>
+            <p class="room-tagline">Experience luxury and comfort at Serene Palace</p><hr>
+
+                <div class="room">
+
+                    <div class="room-details">
+
+                        <h3>🌟 Deluxe Room</h3>
+                        <p>Elegant and comfortable room designed for a relaxing stay.</p>
+
+                            <ul>
+                                <li>✔ King Size Bed</li>
+                                <li>✔ Free Wi-Fi</li>
+                                <li>✔ Air Conditioning</li>
+                                <li>✔ Smart TV</li>
+                                <li>✔ Luxury Bathroom</li>
+                            </ul>
+
+                            <div class="room-info">
+                                <span>👤 2 Guests</span>
+                                <span>📏 320 sq.ft</span>
+                            </div>
+
+                            <div class="price">₹3500 / Night</div>
+
+                            <button class="book-btn"><a href="Form.html">Book Now</a></button>
+
+                    </div>
+                </div>
+
+
+                <div class="room reverse">
+
+                    <div class="room-details">
+
+                        <h3>✨ Luxury Suite</h3>
+                        <p>Experience the finest level of comfort and elegance in our Luxury Suite. Designed for guests who want a premium and spacious stay with world-class facilities.</p>
+
+                            <ul>
+                                <li>✔ King Size Bed</li>
+                                <li>✔ Private Living Area</li>
+                                <li>✔ Balcony with City View</li>
+                                <li>✔ Smart TV</li>
+                                <li>✔ Free High-Speed Wi-Fi</li>
+                                <li>✔ Luxury Bathroom with Bathtub</li>
+                                <li>✔ Mini Bar</li>
+                            </ul>
+
+                            <div class="room-info">
+                                <span>👤 2-3 Guests</span>
+                                <span>📏 600 sq.ft</span>
+                            </div>
+
+                            <div class="price">₹8000 / Night</div>
+
+                            <button class="book-btn"><a href="Form.html">Book Now</a></button>
+
+                    </div>
+                </div><br><br>
+
+                <div class="room">
+
+                    <div class="room-details">
+
+                        <h3>👨‍👩‍👧‍👦 Family Suite</h3>
+                        <p>Spacious and comfortable suite designed for families and group stays with extra living space.</p>
+
+                            <ul>
+                                <li>✔ Two King Size Beds</li>
+                                <li>✔ Living Area</li>
+                                <li>✔ Free Wi-Fi</li>
+                                <li>✔ Smart TV</li>
+                                <li>✔ Luxury Bathroom</li>
+                                <li>✔ Dining Space</li>
+                                </ul>
+
+                                <div class="room-info">
+                                    <span>👤 4 Guests</span>
+                                    <span>📏 500 sq.ft</span>    
+                                </div>
+
+                                <div class="price">₹6000 / Night</div>
+
+                                <button class="book-btn"><a href="Form.html">Book Now</a></button>
+
+                    </div>
+                </div>
+
+                <div class="room reverse">
+
+                    <div class="room-details">
+
+                        <h3>🛏️ Standard Room</h3>
+                        <p>A cozy and affordable room perfect for short stays and solo travelers.</p>
+
+                            <ul>
+                                <li>✔ Queen Size Bed</li>
+                                <li>✔ Free Wi-Fi</li>
+                                <li>✔ Air Conditioning</li>
+                                <li>✔ Flat Screen TV</li>
+                                <li>✔ Private Bathroom</li>
+                            </ul>
+
+                            <div class="room-info">
+                                <span>👤 2 Guests</span>
+                                <span>📏 250 sq.ft</span>   
+                            </div>
+
+                            <div class="price">₹2500 / Night</div>
+
+                            <button class="book-btn"><a href="Form.html">Book Now</a></button>
+
+                    </div>
+                </div>
+
+            </section><hr><br>
+
+            <h2>💜 Photos 🩵</h2><br><hr>
+                <div class="photo">
+                    <p>💖 Deluxe Room</p>
+                    <div id="ph1"></div><br>
+                    <p>💖 Luxury Suite</p>
+                    <div id="ph2"></div><br>
+                    <p>💖 Family Suite</p>
+                    <div id="ph3"></div><br>
+                    <p>💖Standard Room</p>
+                    <div id="ph4"></div><br>
+                </div>
+    </body>
+</html>
